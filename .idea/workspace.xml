@@ -49,42 +49,30 @@
         <entry file="file://$PROJECT_DIR$/src/ua/fantotsy/car/Vehicle.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding>
                 <element signature="e#114#115#0" expanded="true" />
                 <element signature="e#145#146#0" expanded="true" />
                 <element signature="e#190#191#0" expanded="true" />
                 <element signature="e#230#231#0" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#608#609#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#317#318#0" expanded="true" />
+                <element signature="e#359#360#0" expanded="true" />
+                <element signature="e#393#394#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#504#505#0" expanded="true" />
+                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SortedByPrice.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SortedByPrice.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByPrice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SortedByMaxSpeed.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByMaxSpeed.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28202116">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.5640423">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,12 +99,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/ua/fantotsy/Main.java" />
         <option value="$PROJECT_DIR$/src/ua/fantotsy/Vehicle.java" />
-        <option value="$PROJECT_DIR$/src/ua/fantotsy/car/Vehicle.java" />
-        <option value="$PROJECT_DIR$/src/ua/fantotsy/TaxiStation.java" />
         <option value="$PROJECT_DIR$/src/ua/fantotsy/car/SortedByPrice.java" />
-        <option value="$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByPrice.java" />
-        <option value="$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByFuelConsumption.java" />
         <option value="$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedBySpeed.java" />
+        <option value="$PROJECT_DIR$/src/ua/fantotsy/TaxiStation.java" />
+        <option value="$PROJECT_DIR$/src/ua/fantotsy/car/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByPrice.java" />
+        <option value="$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByMaxSpeed.java" />
+        <option value="$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByFuelConsumption.java" />
       </list>
     </option>
   </component>
@@ -167,7 +156,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByMaxSpeed.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByFuelConsumption.java" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -282,6 +271,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.47826087">
+          <caret line="148" column="7" selection-start-line="148" selection-start-column="7" selection-end-line="148" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/fantotsy/TaxiStation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -296,36 +293,36 @@
     <entry file="file://$PROJECT_DIR$/src/ua/fantotsy/car/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
             <element signature="e#114#115#0" expanded="true" />
             <element signature="e#145#146#0" expanded="true" />
             <element signature="e#190#191#0" expanded="true" />
             <element signature="e#230#231#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/util/Comparator.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByMaxSpeed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.47826087">
-          <caret line="148" column="7" selection-start-line="148" selection-start-column="7" selection-end-line="148" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.42303172">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByFuelConsumption.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59929496">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.52878964">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -334,18 +331,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByPrice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/fantotsy/car/comparator/SortedByMaxSpeed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28202116">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.5640423">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

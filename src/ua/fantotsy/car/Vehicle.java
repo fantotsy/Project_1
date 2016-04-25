@@ -11,13 +11,13 @@ abstract public class Vehicle {
         this.maxSpeed = maxSpeed;
     }
 
-    private int price;
+    private double price;
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

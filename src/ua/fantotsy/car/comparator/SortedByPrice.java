@@ -6,15 +6,15 @@ import java.util.Comparator;
 
 public class SortedByPrice implements Comparator<Vehicle> {
     public int compare(Vehicle car1, Vehicle car2) {
-        int price1 = car1.getPrice();
-        int price2 = car2.getPrice();
+        double price1 = car1.getPrice();
+        double price2 = car2.getPrice();
 
         if (price1 < price2) {
             return -1;
-        }
-        if (price1 > price2) {
+        } else if (price1 > price2) {
             return 1;
+        } else {
+            return 0;
         }
-        return 0;
     }
 }
