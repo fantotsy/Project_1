@@ -1,18 +1,21 @@
 package ua.fantotsy.car;
 
-import ua.fantotsy.car.exception.InvalidFuelConsumptionException;
-import ua.fantotsy.car.exception.InvalidMaxSpeedException;
-import ua.fantotsy.car.exception.InvalidNameException;
-import ua.fantotsy.car.exception.InvalidPriceException;
+import ua.fantotsy.car.exception.*;
 
 abstract public class Vehicle {
+    private boolean canBeAdded = true;
+
+    public boolean isCanBeAdded() {
+        return canBeAdded;
+    }
+
     private String name;
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) throws InvalidNameException {
+    public void setName(String name) throws InvalidCarParameterException {
         if (name == "") {
             throw new InvalidNameException("The name cannot be empty");
         }
@@ -25,9 +28,9 @@ abstract public class Vehicle {
         return maxSpeed;
     }
 
-    public void setMaxSpeed(int maxSpeed) throws InvalidMaxSpeedException {
+    public void setMaxSpeed(int maxSpeed) throws InvalidCarParameterException {
         if (maxSpeed <= 0) {
-            throw new InvalidMaxSpeedException("The maximal speed must be above zero", maxSpeed);
+            throw new InvalidMaxSpeedException("The maximal speed must be above zero");
         }
         this.maxSpeed = maxSpeed;
     }
@@ -38,9 +41,9 @@ abstract public class Vehicle {
         return price;
     }
 
-    public void setPrice(double price) throws InvalidPriceException {
+    public void setPrice(double price) throws InvalidCarParameterException {
         if (price < 5000) {
-            throw new InvalidPriceException("The price must be above $5000", price);
+            throw new InvalidPriceException("The price must be above $5000");
         }
         this.price = price;
     }
@@ -51,10 +54,9 @@ abstract public class Vehicle {
         return fuelConsumption;
     }
 
-    public void setFuelConsumption(double fuelConsumption) throws InvalidFuelConsumptionException {
+    public void setFuelConsumption(double fuelConsumption) throws InvalidCarParameterException {
         if (fuelConsumption < 1.0) {
-            throw new InvalidFuelConsumptionException("The fuel consumption must be above 1.0 l/100km",
-                    fuelConsumption);
+            throw new InvalidFuelConsumptionException("The fuel consumption must be above 1.0 l/100km");
         }
         this.fuelConsumption = fuelConsumption;
     }
@@ -69,17 +71,9 @@ abstract public class Vehicle {
             setMaxSpeed(maxSpeed);
             setPrice(price);
             setFuelConsumption(fuelConsumption);
-        } catch (InvalidNameException ex) {
+        } catch (InvalidCarParameterException ex) {
             System.err.println(ex.getMessage());
-        } catch (InvalidMaxSpeedException ex) {
-            System.err.println(ex.getMessage());
-            System.err.println(ex.getSpeed());
-        } catch (InvalidPriceException ex) {
-            System.err.println(ex.getMessage());
-            System.err.println(ex.getPrice());
-        }catch(InvalidFuelConsumptionException ex){
-            System.err.println(ex.getMessage());
-            System.err.println(ex.getFuelConsumption());
+            canBeAdded = false;
         }
     }
 

@@ -1,14 +1,7 @@
 package ua.fantotsy.car.exception;
 
-public class InvalidFuelConsumptionException extends Exception {
-    private double fuelConsumption;
-
-    public double getFuelConsumption() {
-        return fuelConsumption;
-    }
-
-    public InvalidFuelConsumptionException(String message, double fuelConsumption){
+public class InvalidFuelConsumptionException extends InvalidCarParameterException {
+    public InvalidFuelConsumptionException(String message) {
         super(message);
-        this.fuelConsumption = fuelConsumption;
     }
 }

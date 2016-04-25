@@ -1,6 +1,6 @@
 package ua.fantotsy.car.exception;
 
-public class InvalidNameException extends Exception {
+public class InvalidNameException extends InvalidCarParameterException {
     public InvalidNameException(String message) {
         super(message);
     }

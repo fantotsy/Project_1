@@ -1,14 +1,7 @@
 package ua.fantotsy.car.exception;
 
-public class InvalidPriceException extends Exception {
-    private double price;
-
-    public double getPrice() {
-        return price;
-    }
-
-    public InvalidPriceException(String message, double price){
+public class InvalidPriceException extends InvalidCarParameterException {
+    public InvalidPriceException(String message) {
         super(message);
-        this.price = price;
     }
 }

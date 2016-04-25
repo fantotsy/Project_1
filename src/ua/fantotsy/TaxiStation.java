@@ -14,7 +14,9 @@ public class TaxiStation {
     }
 
     public void addCar(Vehicle car) {
-        cars.add(car);
+        if(car.isCanBeAdded()) {
+            cars.add(car);
+        }
     }
 
     public void removeCar(Vehicle car) {
