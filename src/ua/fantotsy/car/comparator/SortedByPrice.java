@@ -9,12 +9,14 @@ public class SortedByPrice implements Comparator<Vehicle> {
         double price1 = car1.getPrice();
         double price2 = car2.getPrice();
 
-        if (price1 < price2) {
-            return -1;
-        } else if (price1 > price2) {
-            return 1;
-        } else {
+        double eps = 1e-5;
+
+        if (Math.abs(price1 - price2) < eps) {
             return 0;
+        } else if (price1 < price2) {
+            return -1;
+        } else {
+            return 1;
         }
     }
 }
