@@ -31,13 +31,13 @@ abstract public class Vehicle {
         this.price = price;
     }
 
-    private int fuelConsumption;
+    private double fuelConsumption;
 
-    public int getFuelConsumption() {
+    public double getFuelConsumption() {
         return fuelConsumption;
     }
 
-    public void setFuelConsumption(int fuelConsumption) {
+    public void setFuelConsumption(double fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
     }
 
@@ -45,10 +45,10 @@ abstract public class Vehicle {
         setName("Unknown");
         setMaxSpeed(0);
         setPrice(0.0);
-        setFuelConsumption(0);
+        setFuelConsumption(0.0);
     }
 
-    public Vehicle(String name, int maxSpeed, int price, int fuelConsumption){
+    public Vehicle(String name, int maxSpeed, double price, double fuelConsumption){
         setName(name);
         setMaxSpeed(maxSpeed);
         setPrice(price);

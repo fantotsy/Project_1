@@ -6,15 +6,17 @@ import java.util.Comparator;
 
 public class SortedByFuelConsumption implements Comparator<Vehicle> {
     public int compare(Vehicle car1, Vehicle car2) {
-        int fuelConsumption1 = car1.getFuelConsumption();
-        int fuelConsumption2 = car2.getFuelConsumption();
+        double fuelConsumption1 = car1.getFuelConsumption();
+        double fuelConsumption2 = car2.getFuelConsumption();
 
-        if (fuelConsumption1 < fuelConsumption2) {
-            return -1;
-        } else if (fuelConsumption1 > fuelConsumption2) {
-            return 1;
-        } else {
+        double eps = 1e-5;
+
+        if (Math.abs(fuelConsumption1 - fuelConsumption2) < eps) {
             return 0;
+        } else if (fuelConsumption1 < fuelConsumption2) {
+            return -1;
+        } else {
+            return 1;
         }
     }
 }
