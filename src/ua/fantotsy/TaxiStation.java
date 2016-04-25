@@ -45,7 +45,7 @@ public class TaxiStation {
 
     public void getAllCarsInfo() {
         for (Vehicle car : cars) {
-            System.out.println(car.getInfo());
+            System.out.println(car);
         }
     }
 

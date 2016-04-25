@@ -41,6 +41,13 @@ abstract public class Vehicle {
         this.fuelConsumption = fuelConsumption;
     }
 
+    public Vehicle(){
+        setName("Unknown");
+        setMaxSpeed(0);
+        setPrice(0.0);
+        setFuelConsumption(0);
+    }
+
     public Vehicle(String name, int maxSpeed, int price, int fuelConsumption){
         setName(name);
         setMaxSpeed(maxSpeed);
@@ -48,7 +55,8 @@ abstract public class Vehicle {
         setFuelConsumption(fuelConsumption);
     }
 
-    public String getInfo(){
+    @Override
+    public String toString(){
         return ("\nName: " + getName() + "\nPrice: " + getPrice()
                 + ";\nFuel Consumption: " + getFuelConsumption()
                 + "\nMaximal Speed: " + getMaxSpeed() + ".\n");
