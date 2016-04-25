@@ -1,6 +1,16 @@
 package ua.fantotsy.car;
 
 abstract public class Vehicle {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     private int maxSpeed;
 
     public int getMaxSpeed() {
@@ -31,4 +41,16 @@ abstract public class Vehicle {
         this.fuelConsumption = fuelConsumption;
     }
 
+    public Vehicle(String name, int maxSpeed, int price, int fuelConsumption){
+        setName(name);
+        setMaxSpeed(maxSpeed);
+        setPrice(price);
+        setFuelConsumption(fuelConsumption);
+    }
+
+    public String getInfo(){
+        return ("\nName: " + getName() + "\nPrice: " + getPrice()
+                + ";\nFuel Consumption: " + getFuelConsumption()
+                + "\nMaximal Speed: " + getMaxSpeed() + ".\n");
+    }
 }
