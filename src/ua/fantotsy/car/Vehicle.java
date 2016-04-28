@@ -17,7 +17,7 @@ abstract public class Vehicle {
 
     public void setName(String name) throws InvalidCarParameterException {
         if (name == "") {
-            throw new InvalidNameException("The name cannot be empty");
+            throw new InvalidCarParameterException("The name cannot be empty");
         }
         this.name = name;
     }
@@ -30,7 +30,7 @@ abstract public class Vehicle {
 
     public void setMaxSpeed(int maxSpeed) throws InvalidCarParameterException {
         if (maxSpeed <= 0) {
-            throw new InvalidMaxSpeedException("The maximal speed must be above zero");
+            throw new InvalidCarParameterException("The maximal speed must be above zero");
         }
         this.maxSpeed = maxSpeed;
     }
@@ -43,7 +43,7 @@ abstract public class Vehicle {
 
     public void setPrice(double price) throws InvalidCarParameterException {
         if (price < 5000) {
-            throw new InvalidPriceException("The price must be above $5000");
+            throw new InvalidCarParameterException("The price must be above $5000");
         }
         this.price = price;
     }
@@ -56,7 +56,7 @@ abstract public class Vehicle {
 
     public void setFuelConsumption(double fuelConsumption) throws InvalidCarParameterException {
         if (fuelConsumption < 1.0) {
-            throw new InvalidFuelConsumptionException("The fuel consumption must be above 1.0 l/100km");
+            throw new InvalidCarParameterException("The fuel consumption must be above 1.0 l/100km");
         }
         this.fuelConsumption = fuelConsumption;
     }
