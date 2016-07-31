@@ -1,24 +1,20 @@
+/* project TaxiStation
+ *
+ * abstract class Vehicle
+ *
+ * fantotsy ©
+ */
+
 package ua.fantotsy.car;
 
-import ua.fantotsy.car.exception.*;
-
 abstract public class Vehicle {
-    private boolean canBeAdded = true;
-
-    public boolean isCanBeAdded() {
-        return canBeAdded;
-    }
-
     private String name;
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) throws InvalidCarParameterException {
-        if (name == "") {
-            throw new InvalidCarParameterException("The name cannot be empty");
-        }
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -28,10 +24,7 @@ abstract public class Vehicle {
         return maxSpeed;
     }
 
-    public void setMaxSpeed(int maxSpeed) throws InvalidCarParameterException {
-        if (maxSpeed <= 0) {
-            throw new InvalidCarParameterException("The maximal speed must be above zero");
-        }
+    public void setMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
 
@@ -41,10 +34,7 @@ abstract public class Vehicle {
         return price;
     }
 
-    public void setPrice(double price) throws InvalidCarParameterException {
-        if (price < 5000) {
-            throw new InvalidCarParameterException("The price must be above $5000");
-        }
+    public void setPrice(double price) {
         this.price = price;
     }
 
@@ -54,33 +44,25 @@ abstract public class Vehicle {
         return fuelConsumption;
     }
 
-    public void setFuelConsumption(double fuelConsumption) throws InvalidCarParameterException {
-        if (fuelConsumption < 1.0) {
-            throw new InvalidCarParameterException("The fuel consumption must be above 1.0 l/100km");
-        }
+    public void setFuelConsumption(double fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
     }
 
     public Vehicle() {
-        this("Unknown", 1, 6000, 2.0);
+        this("Unknown", 1, 5000, 2.0);
     }
 
     public Vehicle(String name, int maxSpeed, double price, double fuelConsumption) {
-        try {
-            setName(name);
-            setMaxSpeed(maxSpeed);
-            setPrice(price);
-            setFuelConsumption(fuelConsumption);
-        } catch (InvalidCarParameterException ex) {
-            System.err.println(ex.getMessage());
-            canBeAdded = false;
-        }
+        setName(name);
+        setMaxSpeed(maxSpeed);
+        setPrice(price);
+        setFuelConsumption(fuelConsumption);
     }
 
     @Override
     public String toString() {
         return ("\nName: " + getName() + "\nPrice: " + getPrice()
                 + ";\nFuel Consumption: " + getFuelConsumption()
-                + "\nMaximal Speed: " + getMaxSpeed() + ".\n");
+                + "\nMaximal Speed: " + getMaxSpeed() + ";\n");
     }
 }

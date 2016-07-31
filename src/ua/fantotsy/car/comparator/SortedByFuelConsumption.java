@@ -1,3 +1,10 @@
+/* project TaxiStation
+ *
+ * class SortedByFuelConsumption implements Comparator<Vehicle>
+ *
+ * fantotsy ©
+ */
+
 package ua.fantotsy.car.comparator;
 
 import ua.fantotsy.car.Vehicle;

@@ -1,22 +1,30 @@
+/* project TaxiStation
+ *
+ * class TaxiStation
+ *
+ * fantotsy ©
+ */
+
 package ua.fantotsy;
 
 import ua.fantotsy.car.Vehicle;
 import ua.fantotsy.car.comparator.SortedByFuelConsumption;
+import ua.fantotsy.car.comparator.SortedByMaxSpeed;
+import ua.fantotsy.car.comparator.SortedByName;
+import ua.fantotsy.car.comparator.SortedByPrice;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TaxiStation {
-    List<Vehicle> cars = new ArrayList<Vehicle>();
+    private List<Vehicle> cars;
 
     public TaxiStation() {
-
+        cars = new ArrayList<Vehicle>();
     }
 
     public void addCar(Vehicle car) {
-        if (car.isCanBeAdded()) {
-            cars.add(car);
-        }
+        cars.add(car);
     }
 
     public void removeCar(Vehicle car) {
@@ -31,14 +39,28 @@ public class TaxiStation {
         return result;
     }
 
-    public void sortByFuelConsumption() {
-        cars.sort(new SortedByFuelConsumption());
+    public void sortByParameter(String parameter) {
+        switch (parameter) {
+            case "fuelConsumption":
+                cars.sort(new SortedByFuelConsumption());
+                break;
+            case "maxSpeed":
+                cars.sort(new SortedByMaxSpeed());
+                break;
+            case "name":
+                cars.sort(new SortedByName());
+                break;
+            case "price":
+                cars.sort(new SortedByPrice());
+                break;
+            default:
+        }
     }
 
     public List<Vehicle> findCarsByMaxSpeed(int lowerSpeed, int upperSpeed) {
         List<Vehicle> result = new ArrayList<Vehicle>();
         for (Vehicle car : cars) {
-            if (car.getMaxSpeed() >= lowerSpeed && car.getMaxSpeed() <= upperSpeed) {
+            if ((car.getMaxSpeed() >= lowerSpeed) && (car.getMaxSpeed() <= upperSpeed)) {
                 result.add(car);
             }
         }
@@ -50,5 +72,4 @@ public class TaxiStation {
             System.out.println(car);
         }
     }
-
 }
